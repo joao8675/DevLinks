@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#container {
+  width: 360px;
+  height: 712px;
+  margin: auto;
+  border: 1px red solid;
+}
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px;
+}
+#profile img {
+  height: 111px;
+}
+#profile p {
+  font-size: ;
+  font-weight: 1px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+}
