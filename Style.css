@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,26 +14,21 @@ body {
 }
 #container {
   width: 360px;
-  height: 712px;
-  margin: auto;
-  border: 1px red solid;
+  margin: 56px auto 0;
 }
 #profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  text-align: center;
   padding: 24px;
 }
 #profile img {
-  height: 111px;
+  width: 112px;
+  margin-bottom: 8px;
 }
-#profile p {
-  font-size: ;
-  font-weight: 1px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+#profile {
   font-family: Inter, sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 24px;
+}
+#links {
 }
