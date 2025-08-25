@@ -23,6 +23,7 @@ body {
 #profile img {
   width: 112px;
   margin-bottom: 8px;
+  user-select: none;
 }
 #profile {
   font-family: Inter, sans-serif;
@@ -50,6 +51,7 @@ ul li a {
   border-radius: 8px;
   -webkit-backdrop-filter: blur(4px);
   transition: border-radius 0.2s, background 0.4s;
+  user-select: none;
 }
 ul li a:hover {
   border: 1.5px solid #ffffff6c;
@@ -90,6 +92,7 @@ footer {
   color: #ffffff;
   font-weight: 300;
   padding: 24px;
+  user-select: none;
 }
 footer a {
   color: #ffffff;
@@ -98,4 +101,59 @@ footer a {
 }
 footer a:hover {
   color: #ffffffad;
+}
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px 44px 24px;
+}
+.tracker {
+  width: 64px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  border-radius: 12px;
+  background-color: #ffffff23;
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.4s;
+  pointer-events: none;
+  z-index: -1;
+  transform: translate(0, 0);
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 60px;
+  transition: all 0.3s;
+  user-select: none;
+  position: absolute;
+  left: 745px;
+}
+button:hover {
+  background-color: #ffffffd1;
+  left: 744px;
+  font-size: 24px;
+}
+button:active {
+  transform: scale(1.1);
+}
+ion-icon {
+  pointer-events: none;
+}
+body.dark button {
+  left: 776px;
+}
+body.dark {
+  background-image: url(./assets/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
